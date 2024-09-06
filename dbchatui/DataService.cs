@@ -9,7 +9,7 @@ namespace YourOwnData
         public static List<List<string>> GetDataTable(string sqlQuery)
         {
             var rows = new List<List<string>>();
-            using (SqlConnection connection = new SqlConnection("YOUR_CONNECTION_STRING"))
+            using (SqlConnection connection = new SqlConnection("Server = tcp:sql - comercial.database.windows.net,1433; Initial Catalog = DYPLAST; Persist Security Info=False; User ID = aplix_admin; Password = 4pl1x2k1!; MultipleActiveResultSets = False; Encrypt = True; TrustServerCertificate = False; Connection Timeout = 30;"))
             {
                 connection.Open();
 

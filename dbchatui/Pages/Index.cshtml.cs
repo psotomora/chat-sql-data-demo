@@ -25,9 +25,9 @@ namespace StoryCreator.Pages
         public void RunQuery(string userPrompt)
         {
             // Configure OpenAI client
-            string openAIEndpoint = "YOUR_ENDPOINT";
-            string openAIKey = "YOUR_KEY";
-            string openAIDeploymentName = "YOUR_MODE_NAME";
+            string openAIEndpoint = "https://aplix-openai-dyplast.openai.azure.com/";
+            string openAIKey = "45234f12cfb04eeab9338669a7151bb2";
+            string openAIDeploymentName = aplix-ai-dyplast-gpt4omini";
 
             OpenAIClient client = new(new Uri(openAIEndpoint), new AzureKeyCredential(openAIKey));
 
